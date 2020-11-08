@@ -1,5 +1,5 @@
 body{
-    background-image: url(https://media.istockphoto.com/illustrations/quiz-test-background-illustration-id1165053282);
+    background-image: url(images/quizImage.jpg);
 }
 .highscores {
     font-size: 1.35rem;
@@ -7,16 +7,14 @@ body{
 
 }
 #wrapper, .leaderBox {
-  width: 500px;
-  height: 550px;
+  width: 100%;
+  height: auto;
   border: 2px solid darkblue;
   margin-top: 5rem;
   background-color: whitesmoke;
   text-align: center;
 }
-.leaderBox{
-    height: auto;
-}
+
 #startH1 {
     margin-top: 4rem;
     padding: 20px;
@@ -31,6 +29,7 @@ p {
 #start {
   background-color: blue;
   margin-top: 4rem;
+  margin-bottom: 1rem;
   padding: 15px 32px;
   font-size: 20px;
   color: white;
@@ -65,17 +64,12 @@ p {
 }
 #submit-btn, #startOver {
     background-color: blue;
-    width: 20%;
-    margin-left: 33%;
+    width: auto;
+    display: inline-block;
     padding: 10px;
     font-size: 1rem;
     border-radius: 8px;
     color: white;
-}
-#startOver {
-    float: right;
-    margin-top: 1rem;
-    margin-right: 10px;
 }
 
 .timer {
@@ -107,4 +101,7 @@ li {
   width: auto;
   text-align: center;
   border-radius: 8px;
+}
+.titleLeaders {
+    text-decoration: underline;
 }
