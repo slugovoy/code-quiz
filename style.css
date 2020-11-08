@@ -1,11 +1,110 @@
-body {
-    background-image: url(https://textinmotion.com/media/backgrounds/000/000/433/background/full/QuizText-BG.jpg);
+body{
+    background-image: url(https://media.istockphoto.com/illustrations/quiz-test-background-illustration-id1165053282);
 }
-.questionsBox {
-    border: 2px solid white;
-    padding: 10px 40px 40px 40px;
-    background-color: beige;
-    margin-top: 4rem;
-    height: 500px;
+.highscores {
+    font-size: 1.35rem;
+    text-decoration: underline;
 
+}
+#wrapper, .leaderBox {
+  width: 500px;
+  height: 550px;
+  border: 2px solid darkblue;
+  margin-top: 5rem;
+  background-color: whitesmoke;
+  text-align: center;
+}
+.leaderBox{
+    height: auto;
+}
+#startH1 {
+    margin-top: 4rem;
+    padding: 20px;
+}
+p {
+
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding:  2rem;
+}
+#start {
+  background-color: blue;
+  margin-top: 4rem;
+  padding: 15px 32px;
+  font-size: 20px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#questionsBox {
+  margin: 20px;
+}
+#question-text{
+    font-weight: 700;
+    padding: 2rem;
+}
+.answerBtn {
+  display: block;
+  width: 40%;
+  padding: 0.5rem;
+  margin: 1rem;
+  background-color: mediumaquamarine;
+  font-size: 1.5rem;
+  border-radius: 8px;
+}
+#correctWrong {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+#endH5 {
+    padding: 2rem;
+}
+#initials {
+    border: 2px solid black;
+}
+#submit-btn, #startOver {
+    background-color: blue;
+    width: 20%;
+    margin-left: 33%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    color: white;
+}
+#startOver {
+    float: right;
+    margin-top: 1rem;
+    margin-right: 10px;
+}
+
+.timer {
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+ol {
+    margin-left: 25%;
+    font-weight: 800;
+}
+
+li {
+    
+    margin-bottom: 1rem;
+    width: 60%;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    text-decoration: underline;
+    background-color: rgb(228, 205, 205);
+}
+
+#goBack, #clear {
+  background-color: blue;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  width: auto;
+  text-align: center;
+  border-radius: 8px;
 }
