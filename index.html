@@ -16,14 +16,17 @@
   </head>
 
   <body>
+    <nav
+      class="navbar navbar-light bg-warning d-flex justify-content-between"
+    >
+      <div class="highscores">
+        <a href="leaderboard.html">View Highscores</a>
+      </div>
+      <div class="timer" id="timer">Time: <span id="time">0</span></div>
+    </nav>
     <div class="container">
       <div class="row">
-        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 mt-5">
-          <div class="highscores">
-            <a href="leaderboard.html">View Highscores</a>
-          </div>
-        </div>
-        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" id="wrapper">
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 mx-auto" id="wrapper">
           <div id="start-prompt">
             <h1 id="startH1">Coding Quiz Challenge</h1>
             <p>
@@ -38,7 +41,7 @@
             <div id="answers"></div>
           </div>
           <div
-            class="text-center text-black mt-5"
+            class="text-center text-black justify-content-center mt-5"
             id="form"
             style="display: none"
           >
@@ -58,12 +61,11 @@
                 placeholder="Enter your initials"
               />
             </label>
-            <button id="submit-btn">Submit</button>
-            <button id="startOver">Start Over</button>
+            <div class="buttonGroupLastPage mt-3 mb-3">
+              <button id="submit-btn">Submit</button>
+              <button id="startOver">Start Over</button>
+            </div>
           </div>
-        </div>
-        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 mt-5">
-          <div class="timer" id="timer">Time: <span id="time">0</span></div>
         </div>
       </div>
     </div>
