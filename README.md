@@ -21,8 +21,9 @@ will be redirected to the next question with feedback(Wrong/Correct) under the b
 Here is the last Page of quiz with textarea for initials and 2 buttons: 
 1. "Submit" - allows you save your score in local storage.
 2. "Start Over" - redirects you to the start page.
+3. "Go To Highscores" - redirects to page with all scores, sorted by the score(high to low).
 
-![Last Page](images/finalPage.png)
+![Last Page](images/lastPage.png)
 
 
 If user wants to look at Leaderboard this link at the top of the page needs to be pushed
