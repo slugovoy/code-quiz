@@ -1,3 +1,4 @@
+// Global variables
 const startBtn = document.querySelector("#start");
 const startPrompt = document.querySelector("#start-prompt");
 const questionBox = document.querySelector("#questionBox");
@@ -11,8 +12,10 @@ let score = 0;
 let correctScore = 0;
 let fine = 10;
 let timeTotal = 75;
+// displaying current time on a screen
 time.textContent = `${timeTotal} seconds left`;
 
+// Array of object with question, answers and correct answer
 const questions = [
   {
     questionText: "Commonly used data types DO NOT include:",
@@ -48,13 +51,15 @@ const questions = [
     correctIndex: 3,
   },
 ];
-
+// Variable for question's index
 let questionInd = 0;
 
+// Event listeners for start button and answers
 startBtn.addEventListener("click", startClick);
 startBtn.addEventListener("click", startTimer);
 answersBox.addEventListener("click", answerClick);
 
+// hide first page and reveal questions
 function startClick(event) {
   event.preventDefault();
   startPrompt.style.display = "none";
@@ -64,9 +69,11 @@ function startClick(event) {
   showQuestion();
 }
 
+// Variable for Correct/Wrong feedback
 const correctWrong = document.createElement("p");
 correctWrong.setAttribute("id", "correctWrong");
 
+// 2 functions for displaying Correct/Wrong feedback
 function hideResult() {
   correctWrong.style.display = "none";
 }
@@ -74,6 +81,7 @@ function showResult() {
   correctWrong.removeAttribute("style");
 }
 
+// function responsible for changing questions and checking if they correct
 function answerClick(event) {
   event.preventDefault();
 
@@ -83,14 +91,16 @@ function answerClick(event) {
 
   let question = questions[questionInd];
   let correctAnswer = question.answers[question.correctIndex];
-
+//If answer correct place feedback
   if (userAnswer === correctAnswer) {
     correctScore++;
     correctWrong.textContent = "Correct answer!";
     questionBox.appendChild(correctWrong);
     setTimeout(hideResult, 800);
     showResult();
-  } else {
+  } 
+  // if answer is wrong place feedback and extract time from total time
+  else {
     timeTotal = timeTotal - fine;
     correctWrong.textContent = "Wrong answer!";
     questionBox.appendChild(correctWrong);
@@ -98,19 +108,24 @@ function answerClick(event) {
     showResult();
   }
   questionInd++;
+  // if no more questions end game
   if (questionInd >= questions.length) {
     clearInterval(startTimer);
     lastPage();
-  } else {
+  } 
+  // show next question
+  else {
     showQuestion();
   }
 }
 
+// function for placing questions on a screen
 function showQuestion() {
   let curQuestion = questions[questionInd];
   questionText.textContent = curQuestion.questionText;
   answersBox.innerHTML = "";
 
+  // loop to iterate through answers and creating buttons for it
   for (let i = 0; i < curQuestion.answers.length; i++) {
     const answer = curQuestion.answers[i];
     const answerBtn = document.createElement("button");
@@ -119,6 +134,8 @@ function showQuestion() {
     answersBox.appendChild(answerBtn);
   }
 }
+
+// function for running timer
 function startTimer() {
   setInterval(function () {
     if (timeTotal > 0) {
@@ -131,7 +148,7 @@ function startTimer() {
     }
   }, 1000);
 }
-
+// function for displaying last page
 function lastPage() {
   let numberCorrectAnswers = document.querySelector("#numberCorrectAnswers");
   numberCorrectAnswers.textContent = `${correctScore}`;
@@ -140,16 +157,21 @@ function lastPage() {
   timer.style.display = "none";
   finalScore.textContent = `${score}`;
 }
-
+// Variable for Start Over button
 const startOverBtn = document.querySelector("#startOver");
+
+// function for Start Over button that sends you to leader board
 function startOver(event) {
   event.stopPropagation();
   window.location.replace("index.html");
 }
 startOverBtn.addEventListener("click", startOver);
 
+// variable for submit button
 const submitBtn = document.querySelector("#submit-btn");
 submitBtn.addEventListener("click", submitInitials);
+
+// function for submit button that sending data to local storage
 function submitInitials(event) {
   event.preventDefault();
   let initials = document.querySelector("#initials");
