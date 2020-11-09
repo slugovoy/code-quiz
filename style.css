@@ -1,11 +1,15 @@
+/* Background image and backup color for body */
 body{
     background-image: url(images/quizImage.jpg);
+    background-color: wheat;
 }
+/* Style for link */
 .highscores {
     font-size: 1.35rem;
     text-decoration: underline;
 
 }
+/* Styling for first and last pages containers */
 #wrapper, .leaderBox {
   width: 100%;
   height: auto;
@@ -14,11 +18,12 @@ body{
   background-color: whitesmoke;
   text-align: center;
 }
-
+/* Title styling */
 #startH1 {
     margin-top: 4rem;
     padding: 20px;
 }
+/* text styling */
 p {
 
   justify-content: center;
@@ -26,6 +31,7 @@ p {
   font-weight: 600;
   padding:  2rem;
 }
+/* First page button style */
 #start {
   background-color: blue;
   margin-top: 4rem;
@@ -43,6 +49,7 @@ p {
     font-weight: 700;
     padding: 2rem;
 }
+/* Answer's button style */
 .answerBtn {
   display: block;
   width: 40%;
@@ -52,6 +59,7 @@ p {
   font-size: 1.5rem;
   border-radius: 8px;
 }
+/* Feedback's style */
 #correctWrong {
     font-size: 1.5rem;
     padding: 1rem;
@@ -62,6 +70,7 @@ p {
 #initials {
     border: 2px solid black;
 }
+/* Last page buttons style */
 #submit-btn, #startOver {
     background-color: blue;
     width: auto;
@@ -71,7 +80,7 @@ p {
     border-radius: 8px;
     color: white;
 }
-
+/* Timer text style */
 .timer {
     color: black;
     font-size: 1rem;
@@ -82,7 +91,7 @@ ol {
     margin-left: 25%;
     font-weight: 800;
 }
-
+/* Leader's list style */
 li {
     
     margin-bottom: 1rem;
@@ -92,7 +101,7 @@ li {
     text-decoration: underline;
     background-color: rgb(228, 205, 205);
 }
-
+/* Leader's board buttnos style */
 #goBack, #clear {
   background-color: blue;
   padding: 10px;
