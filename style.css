@@ -71,7 +71,7 @@ p {
     border: 2px solid black;
 }
 /* Last page buttons style */
-#submit-btn, #startOver {
+#submit-btn, #startOver, #highScoresBtn {
     background-color: blue;
     width: auto;
     display: inline-block;
