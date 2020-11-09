@@ -159,13 +159,21 @@ function lastPage() {
 }
 // Variable for Start Over button
 const startOverBtn = document.querySelector("#startOver");
-
-// function for Start Over button that sends you to leader board
+// function for Start Over button that sends you to start page
 function startOver(event) {
   event.stopPropagation();
   window.location.replace("index.html");
 }
 startOverBtn.addEventListener("click", startOver);
+
+// Variable for Go To Highscores button
+const goToHighScoresBtn = document.querySelector("#highScoresBtn");
+// function for Go To Highscores that sends you to leader board
+function goToHighScores(event) {
+  event.stopPropagation();
+  window.location.replace("leaderboard.html");
+}
+goToHighScoresBtn.addEventListener("click",goToHighScores);
 
 // variable for submit button
 const submitBtn = document.querySelector("#submit-btn");
