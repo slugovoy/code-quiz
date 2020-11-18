@@ -8,7 +8,7 @@ Also, at the end of quiz user will be prompted for initials.They needed to store
 
 Here some screenshots that will help understand the flow
 
-Start page with a "Start" button and short decription
+#### *Start page with a "Start" button and short decription*
 
 ![Start Page](images/startPage.png)
 
@@ -18,7 +18,7 @@ will be redirected to the next question with feedback(Wrong/Correct) under the b
 
 ![Question's Example](images/questionExample.png)
 
-Here is the last Page of quiz with textarea for initials and 2 buttons: 
+#### *Here is the last Page of quiz with textarea for initials and 2 buttons:* 
 1. "Submit" - allows you save your score in local storage.
 2. "Start Over" - redirects you to the start page.
 3. "Go To Highscores" - redirects to page with all scores, sorted by the score(high to low).
