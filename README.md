@@ -44,6 +44,19 @@ Here is an example of code that responsable for timer and Last Page of quiz
 ![Code example](images/codeExample.png)
 
 
+Technologies, languages, frameworks been used:
+
+
+1. Javascript - used to dynamically change html and store user-input.
+2. HTML - used to create elements on the DOM.
+3. CSS - used for styling html elements on page.
+4. Query - Used for event listeners of elements as well as to store and recall varibles in local storage to be displayed dynamically in HTML on the page.
+5. Bootstrap - used for creating resposive structure and styling for this app.
+6. Local storage - used to keep the variables and their values.
+
+
+
+
 Here is link to the deployed project  https://slugovoy.github.io/code-quiz/
 
 
