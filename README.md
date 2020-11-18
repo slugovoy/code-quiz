@@ -54,7 +54,9 @@ Technologies, languages, frameworks been used:
 5. Bootstrap - used for creating resposive structure and styling for this app.
 6. Local storage - used to keep the variables and their values.
 
-
+My contacts:
+1. Email serg.lugovoy.81@gmail.com
+2. Phone - +1(954)303-3692
 
 
 Here is link to the deployed project  https://slugovoy.github.io/code-quiz/
