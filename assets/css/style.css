@@ -1,6 +1,6 @@
 /* Background image and backup color for body */
 body{
-    background-image: url(images/quizImage.jpg);
+    background-image: url(/assets/images/quizImage.jpg);
     background-color: wheat;
 }
 /* Style for link */

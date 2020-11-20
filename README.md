@@ -10,25 +10,25 @@ Here some screenshots that will help understand the flow
 
 ### *Start page with a "Start" button and short decription*
 
-![Start Page](images/startPage.png)
+![Start Page](assets/images/startPage.png)
 
 
 *Here the page with question's example.* When user pushes the button with answer, he(she)
 will be redirected to the next question with feedback(Wrong/Correct) under the buttons.
 
-![Question's Example](images/questionExample.png)
+![Question's Example](assets/images/questionExample.png)
 
 ### *Here is the last Page of quiz with textarea for initials and 2 buttons:* 
 1. "Submit" - allows you save your score in local storage.
 2. "Start Over" - redirects you to the start page.
 3. "Go To Highscores" - redirects to page with all scores, sorted by the score(high to low).
 
-![Last Page](images/lastPage.png)
+![Last Page](assets/images/lastPage.png)
 
 
 *If user wants to look at Leaderboard this link at the top of the page needs to be pushed*
 
-![Link](images/HighScoreLink.png)
+![Link](assets/images/HighScoreLink.png)
 
 
 
@@ -36,12 +36,12 @@ will be redirected to the next question with feedback(Wrong/Correct) under the b
 1. "Go Back" - redirects you to the start page.
 2. "Clear Highscores" - allows to clear all scores that page and local storage have.
 
-![Leader Board](images/leaderBoard.png)
+![Leader Board](assets/images/leaderBoard.png)
 
 
 ### *Here is an example of code that responsable for timer and Last Page of quiz*
 
-![Code example](images/codeExample.png)
+![Code example](assets/images/codeExample.png)
 
 
 ## *Technologies, languages, frameworks been used:*
