@@ -1,3 +1,10 @@
+## Code Quiz Application
+
+
+*Here is link to the deployed project*  https://slugovoy.github.io/code-quiz/
+
+
+
 This is a Code Quiz which tests  user's knowledge of basic JavaScript concepts.
 
 The quiz is a multiple-choice and has a timer which determines at the end  how well user answered the questions.
@@ -70,7 +77,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 1. Email serg.lugovoy.81@gmail.com
 2. Phone - +1(954)303-3692
 
-
-*Here is link to the deployed project*  https://slugovoy.github.io/code-quiz/
 
 
